@@ -1,20 +1,20 @@
-
-
 @font-face {
-  font-family: 'CustomFont'; /* Name your font family */
-  src: url(./assets/Roboto-Medium.ttf); /* Locate the .ttf file within your directory*/
+  font-family: anzo1;
+  src: url(./assets/anzo1.woff2);
+}
+@font-face {
+  font-family: anzo2;
+  src: url(./assets/anzo2.woff2);
+}
+@font-face {
+  font-family: anzo3;
+  src: url(./assets/anzo3.woff2);
+}
+@font-face {
+  font-family: anzo4;
+  src: url(./assets/anzo4.woff2);
 }
 
-*{
-  margin:0 ;
-  padding: 0;
-  box-sizing: border-box;
-  font-family: CustomFont;
-}
-html,
-body {
-  background-color: #000000;
-  color: #ffffff;
-  height:100% ;
-  width: 100%;
-}
+@tailwind base;
+@tailwind components;
+@tailwind utilities

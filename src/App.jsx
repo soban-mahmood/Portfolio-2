@@ -1,10 +1,10 @@
 import React from "react";
-
+import './App.css'
 const App = () => {
   return (
-    <div>
-      <h1>hello Lorem ipsum dolor sit amet consectetur, adipisicing elit. Commodi qui quibusdam, atque laudantium quaerat architecto rem nobis ab temporibus repudiandae natus quasi illum nihil nesciunt possimus ea. Quo, nemo est. LockManager,</h1>
-    </div>
+    <h1 className="text-3xl font-bold underline font-[anzo4]">
+      Hello world!
+    </h1>
   );
 };
 
