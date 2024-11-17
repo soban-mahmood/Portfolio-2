@@ -1,10 +1,12 @@
 import React from "react";
 import './App.css'
+import Page1 from "./pages/Page1";
 const App = () => {
+  
   return (
-    <h1 className="text-3xl font-bold underline font-[anzo4]">
-      Hello world!
-    </h1>
+    <>
+    <Page1/>
+    </>
   );
 };
 
