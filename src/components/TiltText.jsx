@@ -2,11 +2,15 @@ import React from "react";
 
 const TiltText = () => {
   return (
-    <div>
-      <h1>
-        <span> I AM DARK MODE™</span>
-        TO HIRE DESIGNER
+    <div className="mt-60">
+      <h1 className="text-[4vw] uppercase font-[anzo1]">
+        I AM{" "}
+        <span className="text-black">
+         Mern Stack <span className="text-white ">™</span>
+        </span>
       </h1>
+      <h1 className="text-[8vw] leading-[5vw] font-[anzo1] uppercase">Developer</h1>
+      <h1 className="text-[4vw]  leading-[6vw] font-[anzo1]">TO HIRE</h1>
     </div>
   );
 };
