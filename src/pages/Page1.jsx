@@ -1,15 +1,30 @@
-import React from 'react'
-
+import React from "react";
+import logo from "../assets/Logo.webp";
+import PIC from "../assets/pic.webp";
+import TiltText from "../components/TiltText";
+import Page1Bottom from "../components/Page1Bottom";
 const Page1 = () => {
   return (
     <>
-     <div className="h-screen bg-white p-8">
-        <div className="h-full w-full bg-[url(https://static.wixstatic.com/media/f1c650_678c0ceab5194893872c60fa3be4bcdc~mv2.jpg/v1/fill/w_1865,h_915,fp_0.69_0.64,q_85,usm_0.66_1.00_0.01,enc_auto/ANZO.jpg)] bg-cover shadow-lg shadow-gray-700 text-white rounded-[45px]">
-            <img src="./../assets/Logo.webp" alt="LOGO" />
+      <div className="h-screen bg-white p-8">
+        <div
+          className="h-full w-full p-10 bg-cover shadow-lg shadow-gray-700 text-white rounded-[45px]"
+          style={{
+            backgroundImage: `url(${PIC})`,
+            backgroundPosition: "center",
+            backgroundRepeat: "no-repeat",
+            backgroundSize: "cover",
+          }}
+        >
+          <div className="px-20">
+            <img src={logo} alt="LOGO" />
+            <TiltText />
+            <Page1Bottom />
+          </div>
         </div>
-     </div>
+      </div>
     </>
-  )
-}
+  );
+};
 
-export default Page1
+export default Page1;
