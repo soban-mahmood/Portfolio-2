@@ -29,12 +29,11 @@ body {
   height: 100%;
   width: 100%;
 }
-#page-in {
-  position: relative;  
-   perspective: 1000px;
+#page1-in {
+   position: relative; 
+  perspective: 2000px;
 }
 #tiltDiv {
   background-color: brown;
-  width: fit-content;
-  transform: rotateY(90deg);
+   width: fit-content; 
 }
