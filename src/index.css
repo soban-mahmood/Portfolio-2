@@ -17,4 +17,24 @@
 
 @tailwind base;
 @tailwind components;
-@tailwind utilities
+@tailwind utilities;
+
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+}
+html,
+body {
+  height: 100%;
+  width: 100%;
+}
+#page-in {
+  position: relative;  
+   perspective: 1000px;
+}
+#tiltDiv {
+  background-color: brown;
+  width: fit-content;
+  transform: rotateY(90deg);
+}
