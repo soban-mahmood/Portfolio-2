@@ -1,14 +1,18 @@
-import React, { useRef } from "react";
+import React, { useRef ,useState} from "react";
 import logo from "../assets/Logo.webp";
 import PIC from "../assets/pic.webp";
 // import TiltText from "../components/TiltText";
 import Page1Bottom from "../components/Page1Bottom";
 const Page1 = () => {
   const titlRef = useRef(null);
-
+  
+  const [xVal, setXval] = useState(0)
+  const [yVal, setYval] = useState(0)
   const mouseMove = (e) => {
     // console.log(titlRef.current.getBoundingClientRect());
-    titlRef.current.style.transform = `rotateX(${e.clientX}deg)`;
+    setXval(e.clientX/100);
+    setYval(e.clientY/100);
+    titlRef.current.style.transform = `rotateX(${yVal}deg) rotateY(${xVal}deg)`;
   };
 
   return (
@@ -16,12 +20,12 @@ const Page1 = () => {
       <div
         id="page1"
         onMouseMove={(e) => {
-          mouseMove(e.clientX, e.clientY);
+          mouseMove(e);
         }}
         className="h-screen relative bg-white p-8  "
       >
         <div
-        id="page1-in"
+          id="page1-in"
           className="h-full w-full p-10 bg-cover shadow-lg relative shadow-gray-700 text-white rounded-[45px]"
           style={{
             backgroundImage: `url(${PIC})`,
@@ -44,9 +48,8 @@ const Page1 = () => {
             <h1 className="text-[4.2vw]  leading-[4vw] font-[anzo1]">
               TO HIRE
             </h1>
-
           </div>
-            <Page1Bottom />
+          <Page1Bottom />
         </div>
       </div>
     </>

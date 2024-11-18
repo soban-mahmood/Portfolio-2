@@ -31,9 +31,9 @@ body {
 }
 #page1-in {
    position: relative; 
-  perspective: 2000px;
+  perspective: 1000px;
 }
 #tiltDiv {
-  background-color: brown;
+  /* background-color: brown; */
    width: fit-content; 
 }
