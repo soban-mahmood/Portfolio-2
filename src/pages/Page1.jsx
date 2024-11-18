@@ -4,9 +4,18 @@ import PIC from "../assets/pic.webp";
 import TiltText from "../components/TiltText";
 import Page1Bottom from "../components/Page1Bottom";
 const Page1 = () => {
+  const mouseMove = (e) => {
+    console.log(e);
+  };
+
   return (
     <>
-      <div className="h-screen bg-white p-8">
+      <div
+        onMouseEnter={(e) => {
+          mouseMove("hello");
+        }}
+        className="h-screen bg-white p-8"
+      >
         <div
           className="h-full w-full p-10 bg-cover shadow-lg shadow-gray-700 text-white rounded-[45px]"
           style={{
