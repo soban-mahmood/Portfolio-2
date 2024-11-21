@@ -1,19 +1,36 @@
-import React, { useRef ,useState} from "react";
+import React, { useRef, useState } from "react";
 import logo from "../assets/Logo.webp";
 import PIC from "../assets/pic.webp";
 // import TiltText from "../components/TiltText";
 import Page1Bottom from "../components/Page1Bottom";
+import { useGSAP } from "@gsap/react";
+import gsap from "gsap";
 const Page1 = () => {
   const titlRef = useRef(null);
-  
-  const [xVal, setXval] = useState(0)
-  const [yVal, setYval] = useState(0)
+
+  const [xVal, setXval] = useState(0);
+  const [yVal, setYval] = useState(0);
   const mouseMove = (e) => {
-    // console.log(titlRef.current.getBoundingClientRect());
-    setXval(e.clientX/100);
-    setYval(e.clientY/100);
-    titlRef.current.style.transform = `rotateX(${yVal}deg) rotateY(${xVal}deg)`;
+    setXval(
+      (e.clientX -
+        titlRef.current.getBoundingClientRect().x -
+        titlRef.current.getBoundingClientRect().width / 2) /
+        60
+    );
+    setYval(
+      (-(e.clientY -
+        titlRef.current.getBoundingClientRect().y -
+        titlRef.current.getBoundingClientRect().width/2) /30
+    ));
   };
+
+  useGSAP(function () {
+    gsap.to(titlRef.current, {
+      transform: `rotateX(${yVal}deg) rotateY(${xVal}deg)`,
+      duration: 1,
+    ease: "power1.out"
+    });
+  },[xVal,yVal] );
 
   return (
     <>
@@ -42,7 +59,7 @@ const Page1 = () => {
                 Mern Stack <span className="text-white ">™</span>
               </span>
             </h1>
-            <h1 className="text-[8vw] leading-[7vw] font-[anzo1] uppercase">
+            <h1 className="text-[6vw] leading-[7vw] font-[anzo1] uppercase">
               Developer
             </h1>
             <h1 className="text-[4.2vw]  leading-[4vw] font-[anzo1]">
