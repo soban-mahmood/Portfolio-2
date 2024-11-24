@@ -28,7 +28,7 @@ const Page1 = () => {
     gsap.to(titlRef.current, {
       transform: `rotateX(${yVal}deg) rotateY(${xVal}deg)`,
       duration: 1,
-    ease: "power1.out"
+    ease: "elastic.out(1,0.3)"
     });
   },[xVal,yVal] );
 
