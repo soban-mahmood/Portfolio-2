@@ -501,7 +501,6 @@ const Page2 = () => {
       </div>
       <div className="h-[1px] w-1/3 bg-black relative left-1/2 -translate-x-1/2 mt-10 mb-40 ">
       </div>
-      <div className="h-36"></div>
     </div>
   );
 };
