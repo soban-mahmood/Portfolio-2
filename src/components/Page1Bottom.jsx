@@ -14,12 +14,12 @@ useGSAP(() => {
   })
 })
   return (
-    <div className="absolute w-full left-0 px-[3vw] py-[1vw] flex justify-between items-end">
+    <div className="absolute w-full left-0 px-[3vw] py-[1vw] flex justify-between items-end ">
       <div>
         <h2 className="text-[25px] font-[anzo3] text-[#F34235]">BRAND DESIGN | WEBSITE DESIGN</h2>
         <h2 className="text-[25px] font-[anzo2] text-[#8C8C8C]"> BESPOKE FREELANCE</h2>
       </div>
-      <div>
+      <div className="">
         <img src={logo1} alt=""   className="logos" />
         <br />
         <img src={logo2} alt=""   className="logos"/>
