@@ -31,9 +31,17 @@ body {
 }
 #page1-in {
    position: relative; 
-  perspective: 1000px;
+  perspective: 2000px;
+}
+#section-2{
+   position: relative; 
+  perspective: 4000px;
 }
 #tiltDiv {
   /* background-color: brown; */
    width: fit-content; 
+}
+
+#rotate-text{
+  transform-origin:100% 70% ;
 }
