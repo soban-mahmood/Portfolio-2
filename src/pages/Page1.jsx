@@ -1,6 +1,6 @@
 import React, { useRef, useState } from "react";
 import logo from "../assets/Logo.webp";
-import PIC from "../assets/pic.webp";
+import PIC from "../assets/landing page.png";
 // import TiltText from "../components/TiltText";
 import Page1Bottom from "../components/Page1Bottom";
 import { useGSAP } from "@gsap/react";
@@ -55,7 +55,7 @@ const Page1 = () => {
           <div ref={titlRef} id="tiltDiv" className="mt-40 ">
             <h1 className="text-[4.2vw] uppercase font-[anzo1] leading-[4vw]">
               I AM
-              <span className="text-black mx-4">
+              <span className="text-[#F34235] mx-4">
                 Mern Stack <span className="text-white ">™</span>
               </span>
             </h1>
