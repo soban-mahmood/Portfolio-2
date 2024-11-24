@@ -1,10 +1,11 @@
 import React, { useRef, useState } from "react";
 import logo from "../assets/Logo.webp";
-import PIC from "../assets/landing page.png";
+import PIC from "../assets/landing.png";
 // import TiltText from "../components/TiltText";
 import Page1Bottom from "../components/Page1Bottom";
 import { useGSAP } from "@gsap/react";
 import gsap from "gsap";
+import TiltText from "../components/TiltText";
 const Page1 = () => {
   const titlRef = useRef(null);
 
@@ -52,20 +53,7 @@ const Page1 = () => {
           }}
         >
           <img src={logo} alt="LOGO" />
-          <div ref={titlRef} id="tiltDiv" className="mt-40 ">
-            <h1 className="text-[4.2vw] uppercase font-[anzo1] leading-[4vw]">
-              I AM
-              <span className="text-[#F34235] mx-4">
-                Mern Stack <span className="text-white ">™</span>
-              </span>
-            </h1>
-            <h1 className="text-[6vw] leading-[7vw] font-[anzo1] uppercase">
-              Developer
-            </h1>
-            <h1 className="text-[4.2vw]  leading-[4vw] font-[anzo1]">
-              TO HIRE
-            </h1>
-          </div>
+         <TiltText titlRef={titlRef}/>
           <Page1Bottom />
         </div>
       </div>
