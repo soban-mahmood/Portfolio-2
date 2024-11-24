@@ -40,7 +40,7 @@ const Page1 = () => {
         onMouseMove={(e) => {
           mouseMove(e);
         }}
-        className="h-screen relative bg-white p-8  "
+        className="h-screen relative p-8  "
       >
         <div
           id="page1-in"

@@ -14,7 +14,7 @@ const Page2 = () => {
       stagger: 1,
       scrollTrigger: {
         trigger: "#rotate-text",
-        start: "top 60%",
+        start: "top 60%",   
         end: "top -100%",
       },
     });
