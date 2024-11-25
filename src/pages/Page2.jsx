@@ -14,7 +14,7 @@ const Page2 = () => {
       stagger: 1,
       scrollTrigger: {
         trigger: "#rotate-text",
-        start: "top 60%",   
+        start: "top 60%",
         end: "top -100%",
       },
     });
@@ -498,8 +498,6 @@ const Page2 = () => {
             </defs>
           </g>
         </svg>
-      </div>
-      <div className="h-[1px] w-1/3 bg-black relative left-1/2 -translate-x-1/2 mt-10 mb-40 ">
       </div>
     </div>
   );
