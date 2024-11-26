@@ -34,22 +34,9 @@ const Page5 = () => {
     return () => ctx.revert();
   });
 
-  // useGSAP(function () {
-  //   gsap.from("#rotatetext", {
-  //     transform: "rotateX(-50deg)",
-  //     opacity: 0,
-  //     duration: 1,
-  //     stagger: 1,
-  //     ScrollTrigger: {
-  //       trigger: "#rotate-text",
-  //       start: "top 60%",
-  //       end: "top -100%",
-  //     },
-  //   });
-  // });
   return (
-    <div className=" text-center text-black  ">
-      <div id="rotatetext" className="mt-30">
+    <div className=" text-center text-black">
+      <div id="rotatetext" className="">
         <h1 className="text-[40vw] font-[anzo4] leading-[35vw] uppercase">
           HELPING
         </h1>
