@@ -4,20 +4,36 @@ import { ScrollTrigger } from "gsap/all";
 import React from "react";
 
 const Page2 = () => {
+ 
+
   gsap.registerPlugin(ScrollTrigger);
+  // gsap.registerPlugin(_ScrollTrigger)
 
   useGSAP(function () {
-    gsap.from("#rotate-text", {
-      transform: "rotateX(-50deg)",
-      opacity: 0,
-      duration: 1,
-      stagger: 1,
-      scrollTrigger: {
-        trigger: "#rotate-text",
-        start: "top 60%",
-        end: "top -100%",
-      },
+    let ctx = gsap.context(() => {
+      const textElements = document.querySelectorAll("#rotate-text");
+      textElements.forEach((element) => {
+        gsap.set(element, {
+          opacity: 0,
+          rotateX: -50
+        });
+        
+        gsap.to(element, {
+          scrollTrigger: {
+            trigger: element,
+            start: "top 80%", // Starts animation when element is 80% from top of viewport
+            end: "top 20%",
+            toggleActions: "play none none reverse",
+            markers: false
+          },
+          opacity: 1,
+          rotateX: 0,
+          duration: 1,
+          ease: "power2.out"
+        });
+      });
     });
+    return () => ctx.revert();
   });
 
   return (
