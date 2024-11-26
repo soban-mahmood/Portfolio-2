@@ -1,5 +1,6 @@
 import React from "react";
 import PIC from "../assets/bgc.avif";
+import Cards from "../components/Cards";
 const page4 = () => {
   return (
     <div className="h-screen p-10 ">
@@ -11,7 +12,9 @@ const page4 = () => {
           backgroundRepeat: "no-repeat",
           backgroundSize: "cover",
         }}
-      ></div>
+      >
+        <Cards/>
+      </div>
     </div>
   );
 };
