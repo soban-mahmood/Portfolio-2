@@ -18,13 +18,13 @@ export default function Cards() {
       <div className="p-10 flex flex-wrap gap-3">
         <Card
           sx={{
-            maxWidth: 405,
+            maxWidth: 300,
             borderRadius: "5px",
             background: "black",
             color: "#fff",
           }}
         >
-          <CardMedia sx={{ height: 140 }} image={img} title="green iguana" />
+          <CardMedia sx={{ height: 120 }} image={img} title="green iguana" />
           <CardContent>
             <Typography gutterBottom variant="h5" component="div">
               Sundown Studio
@@ -55,13 +55,13 @@ export default function Cards() {
         </Card>
         <Card
           sx={{
-            maxWidth: 400,
+            maxWidth: 300,
             borderRadius: "5px",
             background: "black",
             color: "#fff",
           }}
         >
-          <CardMedia sx={{ height: 140 }} image={img1} title="green iguana" />
+          <CardMedia sx={{ height: 120 }} image={img1} title="green iguana" />
           <CardContent>
             <Typography gutterBottom variant="h5" component="div">
               Furni Web-design
@@ -92,13 +92,13 @@ export default function Cards() {
         </Card>
         <Card
           sx={{
-            maxWidth: 400,
+            maxWidth: 300,
             borderRadius: "5px",
             background: "black",
             color: "#fff",
           }}
         >
-          <CardMedia sx={{ height: 140 }} image={img2} title="green iguana" />
+          <CardMedia sx={{ height: 120 }} image={img2} title="green iguana" />
           <CardContent>
             <Typography gutterBottom variant="h5" component="div">
               Ochi Web-design
@@ -129,13 +129,13 @@ export default function Cards() {
           
         <Card
           sx={{
-            maxWidth: 400,
+            maxWidth: 300,
             borderRadius: "5px",
             background: "black",
             color: "#fff",
           }}
         >
-          <CardMedia sx={{ height: 140 }} image={img3} title="green iguana" />
+          <CardMedia sx={{ height: 120 }} image={img3} title="green iguana" />
           <CardContent>
             <Typography gutterBottom variant="h5" component="div">
               Todo Task-list

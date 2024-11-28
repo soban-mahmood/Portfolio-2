@@ -2,7 +2,7 @@ import React, { useRef, useState } from "react";
 import logo from "../assets/Logo.webp";
 import PIC from "../assets/landing.png";
 // import TiltText from "../components/TiltText";
-import Page1Bottom from "../components/Page1Bottom";
+// import Page1Bottom from "../components/Page1Bottom";
 import { useGSAP } from "@gsap/react";
 import gsap from "gsap";
 import TiltText from "../components/TiltText";
@@ -54,7 +54,7 @@ const Page1 = () => {
         >
           <img src={logo} alt="LOGO" />
          <TiltText titlRef={titlRef}/>
-          <Page1Bottom />
+          {/* <Page1Bottom /> */}
         </div>
       </div>
     </>
